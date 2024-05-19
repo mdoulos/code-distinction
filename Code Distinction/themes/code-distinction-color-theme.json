@@ -1,0 +1,570 @@
+{ // Supports: HTML, CSS, JS, JSX, PHP, JSON, EUIV Code
+	"name": "Code Distinction",
+	"colors": {
+		"editor.background": "#0f1113",
+		"editor.foreground": "#eeffff",
+		"activityBarBadge.background": "#007acc",
+		"sideBarTitle.foreground": "#bbbbbb"
+	},
+	"tokenColors": [
+		{
+            "scope": "punctuation",  // Targeting all punctuation
+            "settings": {
+                "foreground": "#FFFFFF"  // Setting the color for punctuation
+            }
+        },
+		{
+			"name": "Comment",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#444c57"
+			}
+		},
+		{ // HTML --------------------------------------------------
+			"name": "HTML Color 1",
+			"scope": [
+				"entity.name.tag.html",
+				"punctuation.separator.key-value.html",
+				"entity.name.tag.js.jsx",
+				"entity.name.tag.js"
+			],
+			"settings": {
+				"foreground": "#75b5ff"
+			}
+		},
+		{
+			"name": "HTML Color 2",
+			"scope": [
+				"string.quoted.double.html",
+				"string.quoted.single.html",
+				"string.quoted.single.css",
+				"string.quoted.double.css",
+				"string.quoted.double.js.jsx",
+				"string.quoted.single.js",
+				"string.quoted.double.js",
+				"keyword.operator.assignment.js.jsx"
+			],
+			"settings": {
+				"foreground": "#becdff"
+			}
+		},
+		{
+			"name": "HTML Color 3",
+			"scope": [
+				"punctuation.definition.string.begin.html",
+				"punctuation.definition.string.end.html",
+				"punctuation.definition.string.begin.js.jsx",
+				"punctuation.definition.string.end.js.jsx"
+			],
+			"settings": {
+				"foreground": "#75b5ff"
+			}
+		},
+		{
+			"name": "HTML Color 4",
+			"scope": [
+				"meta.attribute.id.html",
+				"meta.attribute.class.html",
+				"meta.tag.attributes.js.jsx",
+				"meta.tag.attributes.js"
+			],
+			"settings": {
+				"foreground": "#69ffd2"
+			}
+		},
+		{
+			"name": "HTML Color 5",
+			"scope": [
+				"meta.attribute.async.html",
+				"meta.attribute.defer.html"
+			],
+			"settings": {
+				"foreground": "#f7b48d"
+			}
+		},
+		{
+			"name": "HTML Color 6",
+			"scope": [
+				"meta.attribute.unrecognized.role.html",
+				"meta.attribute.height.html",
+				"meta.attribute.width.html",
+				"meta.attribute.src.html",
+				"meta.attribute.alt.html",
+				"meta.attribute.unrecognized.loading.html",
+				"meta.attribute.for.html",
+				"meta.tag.structure.input.void.html",
+				"meta.tag.structure.input.void.html",
+				"meta.attribute.value.html",
+				"meta.attribute.placeholder.html",
+				"meta.attribute.name.html",
+				"meta.attribute.method.html",
+				"meta.attribute.action.html",
+				"meta.attribute.enctype.html",
+				"meta.attribute.href.html",
+				"meta.attribute.rel.html",
+				"meta.attribute.type.html",
+				"meta.attribute.content.html",
+				"meta.attribute.unrecognized.aria-hidden.html",
+				"meta.attribute.style.html",
+				"meta.attribute.unrecognized.aria-label.html",
+				"meta.attribute.unrecognized.aria-labelledby.html",
+				"meta.attribute.unrecognized.aria-expanded.html",
+				"meta.attribute.unrecognized.aria-controls.html",
+				"meta.attribute.unrecognized.aria-haspopup.html",
+				"meta.attribute.unrecognized.aria-pressed.html",
+				"meta.attribute.unrecognized.aria-describedby.html",
+				"meta.attribute.unrecognized.aria-owns.html",
+				"meta.attribute.unrecognized.aria-selected.html",
+				"meta.attribute.unrecognized.aria-required.html",
+				"meta.attribute.unrecognized.aria-disabled.html",
+				"meta.attribute.unrecognized.aria-checked.html",
+				"meta.attribute.unrecognized.aria-valuemin.html",
+				"meta.attribute.unrecognized.aria-valuemax.html",
+				"meta.attribute.unrecognized.aria-valuenow.html",
+				"meta.attribute.unrecognized.aria-multiselectable.html",
+				"meta.attribute.unrecognized.aria-autocomplete.html",
+				"meta.attribute.unrecognized.aria-sort.html",
+				"meta.attribute.unrecognized.aria-live.html",
+				"meta.attribute.unrecognized.aria-atomic.html",
+				"meta.attribute.unrecognized.aria-relevant.html",
+				"meta.attribute.unrecognized.aria-busy.html",
+				"meta.attribute.unrecognized.aria-dropeffect.html",
+				"meta.attribute.unrecognized.aria-grabbed.html",
+				"meta.attribute.unrecognized.aria-activedescendant.html",
+				"meta.attribute.unrecognized.aria-flowto.html",
+				"meta.attribute.unrecognized.aria-posinset.html",
+				"meta.attribute.unrecognized.aria-setsize.html",
+				"meta.attribute.unrecognized.aria-errormessage.html",
+				"meta.attribute.unrecognized.aria-controls.html",
+				"meta.attribute.unrecognized.aria-orientation.html"
+
+			],
+			"settings": {
+				"foreground": "#c5f1f7"
+			}
+		},
+		{ // PHP --------------------------------------------------
+			"name": "PHP Color 1",
+			"scope": [
+				"punctuation.section.embedded.begin.php",
+				"punctuation.section.embedded.end.php",
+				"storage.modifier.php",
+				"keyword.control.return.php",
+				"keyword.control.continue.php",
+				"storage.type.class.php",
+				"storage.modifier.extends.php",
+				"keyword.control.import.include.php"
+			],
+			"settings": {
+				"foreground": "#c7b8ff"
+			}
+		},
+		{
+			"name": "PHP Color 2",
+			"scope": [
+				"variable.other.php",
+				"variable.other.global.php",
+				"punctuation.definition.variable.php",
+				"variable.other.global.safer.php",
+				"constant.other.php"
+			],
+			"settings": {
+				"foreground": "#c06ce0"
+			}
+		},
+		{
+			"name": "PHP Color 3",
+			"scope": [
+				"string.quoted.single.php",
+				"string.quoted.double.php",
+				"storage.type.php",
+				"keyword.other.new.php"
+			],
+			"settings": {
+				"foreground": "#f0e4fd"
+			}
+		},
+		{
+			"name": "PHP Color 4",
+			"scope": [
+				"support.function.construct.php",
+				"punctuation.definition.string.begin.php",
+				"punctuation.definition.string.end.php",
+				"meta.function.php",
+				"meta.method-call.php",
+				"variable.other.property.php",
+				"constant.numeric.decimal.php",
+				"support.function.construct.output.php",
+				"keyword.operator.increment-decrement.php",
+				"keyword.operator.error-control.php",
+				"support.class.php",
+				"support.class.exception.php",
+				"support.class.builtin.php",
+				"keyword.control.while.php",
+				"keyword.control.endwhile.php",
+				"entity.name.type.class.php",
+				"entity.other.inherited-class.php",
+				"meta.function-call.php"
+			],
+			"settings": {
+				"foreground": "#f36fe1"
+			}
+		},
+		{
+			"name": "PHP Color 5",
+			"scope": [
+				"keyword.control.if.php",
+				"keyword.control.else.php",
+				"keyword.control.elseif.php",
+				"entity.name.goto-label.php",
+				"constant.language.php",
+				"keyword.operator.arithmetic.php",
+				"keyword.operator.string.php",
+				"keyword.control.exception.php",
+				"keyword.control.exception.catch.php",
+				"keyword.control.endif.php"
+			],
+			"settings": {
+				"foreground": "#f0ed35"
+			}
+		},
+		{
+			"name": "PHP Color 6",
+			"scope": [
+				"keyword.operator.assignment.php",
+				"punctuation.separator.delimiter.php",
+				"punctuation.terminator.expression.php",
+			],
+			"settings": {
+				"foreground": "#159fd9"
+			}
+		},
+		{
+			"name": "PHP Color 7",
+			"scope": [
+				"keyword.operator.comparison.php",
+				"keyword.operator.class.php",
+				"keyword.operator.key.php",
+				"keyword.control.exit.php",
+				"keyword.control.foreach.php",
+				"keyword.control.for.php",
+				"keyword.control.endforeach.php",
+				"keyword.control.break.php",
+				"keyword.operator.ternary.php"
+			],
+			"settings": {
+				"foreground": "#ffb3e2"
+			}
+		},
+		{
+			"name": "PHP Color 8",
+			"scope": [
+				"storage.type.function.php"
+			],
+			"settings": {
+				"foreground": "#ff0080"
+			}
+		},
+		{
+			"name": "PHP Color 9",
+			"scope": [
+				"keyword.operator.logical.php",
+				"keyword.operator.comparison.php"
+			],
+			"settings": {
+				"foreground": "#ff00a6"
+			}
+		},
+		{ // Javascript --------------------------------------------------
+			"name": "JS Color 1",
+			"scope": [
+				"meta.definition.variable.js",
+				"variable.other.object.js",
+				"variable.other.readwrite.js",
+				"meta.attribute.event-handler.click.html",
+				"entity.name.function.js.jsx",
+				"variable.other.readwrite.js.jsx",
+				"variable.other.readwrite.alias.js.jsx",
+				"variable.other.readwrite.alias.js",
+				"support.class.component.js"
+			],
+			"settings": {
+				"foreground": "#f3773d"
+			}
+		},
+		{
+			"name": "JS Color 2",
+			"scope": [
+				"entity.name.function.js",
+				"variable.other.property.js",
+				"support.variable.property.js",
+				"punctuation.definition.template-expression.begin.js",
+				"punctuation.definition.template-expression.end.js",
+				"keyword.control.import.js.jsx",
+				"keyword.control.export.js.jsx",
+				"keyword.control.import.js",
+				"keyword.control.export.js",
+				"keyword.control.flow.js.jsx",
+				"keyword.control.flow.js",
+				"keyword.control.default.js.jsx",
+				"keyword.control.default.js",
+				"keyword.operator.expression.import.js"
+			],
+			"settings": {
+				"foreground": "#f3c23d"
+			}
+		},
+		{
+			"name": "JS Color 3",
+			"scope": [
+				"storage.type.function.js"
+			],
+			"settings": {
+				"foreground": "#b34242"
+			}
+		},
+		{
+			"name": "JS Color 4",
+			"scope": [
+				"meta.object.member.js"
+			],
+			"settings": {
+				"foreground": "#f7b48d"
+			}
+		},
+		{
+			"name": "JS Color 5",
+			"scope": [
+				"punctuation.definition.string.begin.js",
+				"punctuation.definition.string.end.js",
+				"constant.numeric.decimal.js",
+				"variable.other.object.property.js",
+				"keyword.operator.expression.of.js",
+				"punctuation.accessor.js",
+				"punctuation.terminator.statement.js",
+				"keyword.control.loop.js",
+				"string.template.js",
+				"keyword.control.from.js.jsx",
+				"keyword.control.as.js",
+				"keyword.control.from.js",
+				"keyword.control.let.js",
+				"keyword.control.var.js",
+				"keyword.control.const.js"
+			],
+			"settings": {
+				"foreground": "#fff9a9"
+			}
+		},
+		{
+			"name": "JS Color 6",
+			"scope": [
+				"constant.language.boolean.true.js",
+				"constant.language.boolean.false.js",
+				"constant.language.null.js",
+				"constant.language.undefined.js",
+				"variable.parameter.js",
+				"meta.embedded.expression.js.jsx",
+				"storage.type.function.arrow.js",
+				"storage.type.function.arrow.js.jsx"
+			],
+			"settings": {
+				"foreground": "#ff6969"
+			}
+		},
+		{
+			"name": "JS Color 7",
+			"scope": [
+				"keyword.control.conditional.js",
+				"storage.type.js",
+				"keyword.operator.assignment.js",
+				"keyword.operator.comparison.js",
+				"keyword.operator.increment.js",
+				"keyword.operator.relational.js",
+				"keyword.operator.new.js",
+				"punctuation.separator.comma.js",
+				"punctuation.separator.key-value.js",
+				"keyword.operator.expression.typeof.js"
+
+			],
+			"settings": {
+				"foreground": "#fffbbc"
+			}
+		},
+		{ // JSON --------------------------------------------------
+			"name": "JSON Color 1",
+			"scope": [
+				"string.json.comments",
+				"support.type.property-name.json"
+			],
+			"settings": {
+				"foreground": "#f3773d"
+			}
+		},
+		{
+			"name": "JSON Color 2",
+			"scope": [
+				"meta.structure.dictionary.value.json.comments",
+				"meta.structure.dictionary.value.json"
+			],
+			"settings": {
+				"foreground": "#dfdbad"
+			}
+		},
+		{ 
+			"name": "JSON Color 3",
+			"scope": [
+				"punctuation.definition.string.begin.json.comments",
+				"punctuation.definition.string.end.json.comments",
+				"punctuation.separator.dictionary.pair.json.comments",
+				"punctuation.separator.array.json.comments",
+				"punctuation.support.type.property-name.begin.json.comments",
+				"punctuation.support.type.property-name.end.json.comments",
+				"punctuation.support.type.property-name.begin.json",
+				"punctuation.support.type.property-name.end.json",
+				"punctuation.definition.string.begin.json",
+				"punctuation.definition.string.end.json",
+				"punctuation.separator.dictionary.pair.json",
+				"punctuation.separator.array.json"
+			],
+			"settings": {
+				"foreground": "#f3c23d"
+			}
+		},
+		{ // CSS --------------------------------------------------
+			"name": "CSS Color 1",
+			"scope": [
+				"entity.other.attribute-name.class.css",
+				"entity.name.tag.css",
+				"keyword.control.at-rule.keyframes.css",
+				"variable.parameter.keyframe-list.css",
+				"entity.other.attribute-name.id.css",
+				"meta.attribute-selector.css",
+				"punctuation.definition.constant.css",
+				"meta.selector.css"
+			],
+			"settings": {
+				"foreground": "#75b5ff"
+			}
+		},
+		{
+			"name": "CSS Color 2",
+			"scope": [
+				"support.type.property-name.css",
+				"support.type.vendored.property-name.css",
+				"meta.property-list.css"
+			],
+			"settings": {
+				"foreground": "#fcacac"
+			}
+		},
+		{ 
+			"name": "CSS Color 3",
+			"scope": [
+				"support.constant.property-value.css",
+				"meta.property-value.css"
+			],
+			"settings": {
+				"foreground": "#bcadfd"
+			}
+		},
+		{ 
+			"name": "CSS Color 4",
+			"scope": [
+				"entity.other.attribute-name.pseudo-element.css",
+				"entity.other.attribute-name.pseudo-class.css",
+				"entity.name.tag.wildcard.css"
+			],
+			"settings": {
+				"foreground": "#df7fe7"
+			}
+		},
+		{ 
+			"name": "CSS Color 5",
+			"scope": [
+				"meta.at-rule.media.header.css",
+				"punctuation.definition.keyword.css",
+				"punctuation.definition.string.begin.css",
+				"punctuation.definition.string.end.css",
+				"keyword.control.at-rule.import.css",
+				"support.function.url.css"
+			],
+			"settings": {
+				"foreground": "#ffc400"
+			}
+		},
+		{
+			"name": "CSS Color 6",
+			"scope": [
+				"support.type.property-name.media.css",
+				"support.constant.media.css"
+			],
+			"settings": {
+				"foreground": "#ff2600"
+			}
+		},
+		{
+			"name": "CSS Color 7",
+			"scope": [
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.id.css"
+			],
+			"settings": {
+				"foreground": "#6ef59b"
+			}
+		},
+		{
+			"name": "CSS Color 8",
+			"scope": [
+				"constant.numeric.css"
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "CSS Color 9",
+			"scope": [
+				"punctuation.definition.entity.css",
+				"punctuation.terminator.rule.css",
+				"punctuation.separator.key-value.css",
+				"punctuation.separator.list.comma.css"
+			],
+			"settings": {
+				"foreground": "#95c7ff"
+			}
+		},
+		{ // EUIV Code --------------------------------------------------
+			"name": "EU4 Color 1",
+			"scope": [
+				"entity.name.function.scope.euiv",
+				"variable.name.modifier-command.euiv",
+			],
+			"settings": {
+				"foreground": "#f5dc76"
+			}
+		},
+		{
+			"name": "EU4 Color 2",
+			"scope": [
+				"string.quoted.double.euiv",
+				"constant.character.tags-other-scopes.euiv"
+			],
+			"settings": {
+				"foreground": "#95b1e4"
+			}
+		},
+		{
+			"name": "EU4 Color 2",
+			"scope": [
+				"constant.numeric.euiv",
+			],
+			"settings": {
+				"foreground": "#f08a61"
+			}
+		},
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "code-distinction",
+	"displayName": "Code Distinction",
+	"description": "Code Distinction provides different color themes for different programming languages, making it easier to distinguish between them. Currently supports: PHP, Javascript, JSON, HTML, CSS",
+	"version": "0.0.1",
+	"icon": "theme-icon.jpg",
+	"engines": {
+		"vscode": "^1.81.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Code Distinction",
+				"uiTheme": "vs-dark",
+				"path": "./themes/code-distinction-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1696561245315
+	}
+}
